@@ -1,3 +1,7 @@
 build
-.swp
-.swo
+*.swp
+*.swo
+venv
+lights.egg-info/
+dist
+

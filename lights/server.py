@@ -14,12 +14,21 @@ def off():
 
 @app.route("/on")
 def on():
+    lightsOn()
+    os.system("echo 'failed.' | festival --tts")
+    return 'Go fix the build.\n'
+
+@app.route("/on/<message>")
+def onWithMessage(message):
+    lightsOn()
+    os.system("echo '{0}' | festival --tts".format(message))
+    return message
+
+
+def lightsOn():
     pifacedigital = pifacedigitalio.PiFaceDigital()
     pifacedigital.leds[1].toggle()
     pifacedigital.leds[0].toggle()
-    os.system("echo 'The test failed.' | festival --tts")
-    return 'Go fix the build.\n'
-
 
 def run():
     try:

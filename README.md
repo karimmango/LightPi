@@ -21,7 +21,7 @@ This is a Raspberry Pi.
 
 This is the PiFace, an additional piece of hardware that can be attached to the Raspberry Pi.
 
-![PiFace](https://github.com/karimmango/LightPi/blob/master/img/Full.JPG?raw=true "PiFace")
+![PiFace](https://github.com/karimmango/LightPi/blob/master/img/PiFace.JPG?raw=true "PiFace")
 
 Attach the PiFace onto the Raspberry pi using the 26 pin adapter.
 
@@ -36,3 +36,7 @@ Connect the warning tower light to the relay outputs in the following order: RED
 With the Siren, the power supply will be directly connected into it due to the fact that it requires a lot of power. The wires stemming from the Siren are then connected to the second relay on the PiFace in the first two outlets.
 
 ![Wires](https://github.com/karimmango/LightPi/blob/master/img/Wires.JPG?raw=true "Wires")
+
+This is how the final product should look like:
+
+![Full](https://github.com/karimmango/LightPi/blob/master/img/Full.JPG?raw=true "Full")
